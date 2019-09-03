@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	<form method="get" action="">
+		<!--输入列表-->
+		喜欢的城市
+		<input type="text" name="browser" list="mylist"/>
+		<datalist id="mylist">
+			<option>北京</option>
+			<option>上海</option>
+			<option>广州</option>
+			<option>深圳</option>
+		</datalist>
+		
+		<br /><br /><br />
+		<!--颜色输入-->
+		喜欢的颜色
+		<input type="color" name="color" />
+		
+		<!--
+			日期
+			max:最大日期
+			min:最小日期
+		-->
+		<br /><br /><br />
+		出生日期
+		<input type="date" name="date">
+		<!--<input type="date" name="date" min="2019-08-01"/>-->
+		<br /><br /><br />
+		
+			
+		<!--邮箱地址输入-->
+		输入邮箱
+		<input type="email" name="email" />
+		
+		<br /><br /><br />
+		
+			
+		<!--数字输入
+			max 最大值
+			min 最小值
+		-->
+		输入分数
+		<input type="number" name="score" min="60" max="100"/>
+		
+		<br /><br /><br />
+		
+		<!--
+			label：点label内的文字就可取得焦点
+			required:必填			
+		-->
+		<label for="idname">输入大名</label>
+		<input id="idname" type="text name="name" required/>
+		
+		<br /><br />
+		<!--readonly：只能读-->
+		<input type="text name="name" value="王小明" readonly/>
+		
+		<br /><br />
+		<!--disabled： 使无效-->
+		<input type="text name="name" value="王小明" disabled/>
+		
+		<br /><br />
+		<!--
+			size:输入框的大小
+		-->
+		<input type="text" name="name" value="王小明" size="50"/>
+		
+		<br /><br />
+		<!--
+			maxlength:最多可输入多 少字
+		-->
+		<input type="text" name="name" value="" maxlength="5"/>
+		
+		<br /><br /> <input type="submit" value="送出"/>
+	</form>
+	
+	</body>
+</html>
